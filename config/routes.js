@@ -36,7 +36,7 @@ module.exports.routes = {
     view: 'homepage'
   },
   'GET /object':{
-    view: 'objectsearch'
+    view: 'objectsearch',
   },
   'POST /object':{
     view: 'objectsearch'

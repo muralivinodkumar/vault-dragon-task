@@ -68,7 +68,8 @@ module.exports.blueprints = {
   * (combine w/ policies, etc.)                                              *
   *                                                                          *
   ***************************************************************************/
-
+  //GET /model -> ModelController.find,
+  //GET /model/:key -> ModelController.findOne 
   // rest: true,
 
   /***************************************************************************

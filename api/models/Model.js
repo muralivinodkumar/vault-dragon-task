@@ -14,11 +14,25 @@ module.exports = {
 	  	value:{
 	  		type: 'string'
 	  	},
+	  	 creationDate: {
+        columnName: 'cre_dt',
+        type: 'string',
+        defaultsTo: function() { return Date.now().toString();}
+    	},
+	 //  	afterCreate: function(values, next) {
+	 //    var moment = require('moment');
+	 //    var vall  = moment().format('YYYY-MM-DDTHH');
+	 //    console.log("Exiting date ==="+values.createdAt)
+	 //    console.log("new date ==="+ new Date(vall));
+	 //    console.log("name === "+vall);
+	 //    values.createdAt = vall;
+	 //    Model.update({ id: values.id }, values, next);
+		// },
 	  	toJSON: function () {
 	  		var obj = this.toObject();
 	  		delete obj.id;
-	  		delete obj.createdAt;
-	  		delete obj.updatedAt;
+	  		//delete obj.createdAt;
+	  		//delete obj.updatedAt;
 	  		return obj;
 	  	}
 	  }
