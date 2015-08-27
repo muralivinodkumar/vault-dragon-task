@@ -37,6 +37,9 @@ module.exports.routes = {
   },
   'GET /object':{
     view: 'objectsearch'
+  },
+  'POST /object':{
+    view: 'objectsearch'
   }
 
   /***************************************************************************

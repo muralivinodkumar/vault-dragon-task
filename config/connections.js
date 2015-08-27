@@ -54,15 +54,23 @@ module.exports.connections = {
   * http://en.wikipedia.org/wiki/MongoDB                                     *
   *                                                                          *
   * Run: npm install sails-mongo                                             *
-  *                                                                          *
+  *   
+  someMongodbServer: {
+    adapter: 'sails-mongo',
+    host: 'ds035623.mongolab.com',
+    port: 35623,
+    user: 'vinod',
+    password: 'vinod',
+    database: 'vaultdragon'
+  },                                                                       *
   ***************************************************************************/
   someMongodbServer: {
     adapter: 'sails-mongo',
     host: 'localhost',
     port: 27017,
-    // user: 'username',
-    // password: 'password',
-    // database: 'your_mongo_db_name_here'
+    // user: 'vinod',
+    // password: 'vinod',
+    // database: 'vaultdragon'
   },
 
   /***************************************************************************
